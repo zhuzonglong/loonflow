@@ -24,9 +24,9 @@ RUN npm run build
 
 
 # uwsgi配置文件
-ADD docker_compose_deploy/loonflow-web/uwsgi.ini /opt/loonflow/uwsgi.ini
+ADD /docker_compose_deploy/loonflow-web/uwsgi.ini /opt/loonflow/uwsgi.ini
 # nginx配置文件
 RUN mv /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/nginx.confbak
-ADD docker_compose_deploy/loonflow-web/nginx.conf /usr/local/nginx/conf/nginx.conf
+ADD /docker_compose_deploy/loonflow-web/nginx.conf /usr/local/nginx/conf/nginx.conf
 
 RUN mkdir /var/log/nginx
