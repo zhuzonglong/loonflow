@@ -30,4 +30,3 @@ RUN mv /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/nginx.confbak
 ADD docker_compose_deploy/loonflow-web/nginx.conf /usr/local/nginx/conf/nginx.conf
 
 RUN mkdir /var/log/nginx
-
